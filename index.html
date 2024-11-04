@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Photogram Gallery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="gallery-container">
+      <h1 class="gallery-heading"> Gallery</h1>
+      <div class="gallery-grid">
+         <!-- 9 Images with captions -->
+         <div class="gallery-item" onclick="openModal(this)">
+            <img src="er.jpg" alt="Image 1">
+            <p class="caption">Gojo</p>
+         </div>
+         <div class="gallery-item" onclick="openModal(this)">
+            <img src="wam.jpg" alt="Image 1">
+            <p class="caption">One Piece</p>
+         </div>
+         <div class="gallery-item" onclick="openModal(this)">
+            <img src="wkk.jpg" alt="Image 1">
+            <p class="caption">JJK</p>
+         </div>
+         <div class="gallery-item" onclick="openModal(this)">
+            <img src="jj.jpg" alt="Image 1">
+            <p class="caption">Naruto/p>
+         </div>
+         <div class="gallery-item" onclick="openModal(this)">
+            <img src="hjf.jpg" alt="Image 1">
+            <p class="caption">Mlbb</p>
+         </div>
+         <div class="gallery-item" onclick="openModal(this)">
+            <img src="llpaper.jpg" alt="Image 1">
+            <p class="caption">Naruto</p>
+         </div>
+         <!-- Repeat for each gallery item (image2.jpg, etc.) -->
+      </div>
+   </div>
+
+   <!-- Modal Structure -->
+   <div id="modal" class="modal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="fullImage">
+   </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
